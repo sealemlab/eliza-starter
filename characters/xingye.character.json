@@ -12,6 +12,9 @@
       "TWITTER_ACCESS_TOKEN": "${TWITTER_ACCESS_TOKEN}",
       "TWITTER_ACCESS_SECRET": "${TWITTER_ACCESS_SECRET}"
     },
+    "autoReply": "${TWITTER_AUTO_REPLY}",
+    "actionProcessing": "${ACTION_PROCESSING}",
+    "actionInterval": "${ACTION_INTERVAL}",
     "model": "gemini-2.0-flash-exp",
     "temperature": 0,
     "maxOutputTokens": 8192,
