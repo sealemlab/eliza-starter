@@ -31,19 +31,23 @@
           "comment": "${TWITTER_AUTO_COMMENT}"
         },
         "checkInterval": 5,
+        "debug": true,
+        "logging": {
+          "checkStart": true,
+          "usersFetched": true,
+          "newTweetsFound": true,
+          "commentGeneration": true,
+          "actionExecution": true,
+          "errors": true
+        },
         "commentGeneration": {
           "enabled": true,
           "model": "${GOOGLE_MODEL}",
           "temperature": 0.7,
           "maxTokens": 100,
-          "prompt": "作为一个加密货币和游戏爱好者，你看到这条推文后会如何回复？请用简短的中文回复，语气要友好活泼。推文内容：{{tweet}}"
-        },
-        "commentTemplates": [
-          "这个观点很有意思！",
-          "完全同意你的看法",
-          "感谢分享这个信息",
-          "非常棒的内容"
-        ]
+          "prompt": "作为一个加密货币和游戏爱好者，你看到这条推文后会如何回复？请用简短的中文回复，语气要友好活泼。推文内容：{{tweet}}",
+          "debug": true
+        }
       }
     }
   },
